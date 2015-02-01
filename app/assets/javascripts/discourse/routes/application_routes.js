@@ -7,6 +7,8 @@
 Discourse.Route.buildRoutes(function() {
   var router = this;
 
+  this.route('home', { path: '/' });
+
   // Error page
   this.route('exception', { path: '/exception' });
 
@@ -19,7 +21,8 @@ Discourse.Route.buildRoutes(function() {
   });
   this.resource('topicBySlug', { path: '/t/:slug' });
 
-  this.resource('discovery', { path: '/' }, function() {
+  //this.resource('discovery', { path: '/' }, function() {
+  this.resource('discovery', { path: '/discovery' }, function() {
     router = this;
     // top
     this.route('top');
