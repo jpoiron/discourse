@@ -1,8 +1,48 @@
 <div class='container body-page'>
-  <section class='about'>
-    <h2>{{i18n about.title title=title}}</h2>
-    <p>{{description}}</p>
-  </section>
+    <nav class="header-nav">
+         <a href="home.htm" class="header-nav-link">Home</a> 
+         <div class="header-nav-right">   <a href="/login?returnUrl=%2Fabout" class="header-nav-link header-nav-link-login">Log In</a> <a href="/signup?returnUrl=%2Fabout" class="header-nav-link header-nav-link-signup">Sign Up</a>  </div>
+      </nav>
+      <section>
+         <div class="section-wrapper layout-grid-frame">
+            <div class="layout-twothirds-center text-center">
+               <img src="{unbound headerImgUrl}}"> 
+               <p><h3>One of the primary <b>goals of ConcerningMe</b> is to provide an inclusive, safe, and effective platform for people to discuss their concerns with others.  Why would we spend time, energy, and money doing this?  Because we feel it's important to do something to make the world a better place, even if it's just by improving how people talk to each on the internet.</h3></p>
+			   
+				<p>Discussions are plenty on the internet but most of them are uncivilized and degrade into negative posts which derail constructive discourse.  This is why we've based our site on a leading edge discussion platform called <a href="http://www.discourse.org" target="_blank">Discourse.</a>  Discourse is a 100% open source discussion platform built for the next decade of the Internet.  It's a game changer when it comes to on-line discussion software.  You can read all about it <a href="http://www.discourse.org/faq/" target="_blank">here</a>.</p>
+				
+				<p>We have lots of features in the works that will help you connect with the issues that concern you and help you connect to people that will help you to address them.  Stay tuned!</p></p>
+            </div>
+         </div>
+      </section>
+      <section class="section-background-colour1-light">
+         <div class="section-wrapper layout-grid-frame">
+            <h1 class="text-center">A brief history of ConcerningMe</h1>
+            <div class="layout-twothirds-center">
+               <ul>
+                  <li>
+                     <p>Around the fall of 2014, Rob and Joel got together in order to collaborate on a project as yet
+					 undetermined.  They had enjoyed working together in the past at Imaginet Resources in Winnipeg, Manitoba.  Both prairie boys had a desire to leverage their skills and experience in technology 
+					 in order to make a positive difference in the world.  Out of those early discussions came the 
+					 seed that would eventually grow into ConcerningMe.com.</p>
+                  </li>
+                  <li>
+                     <p>The first beta of ConcerningMe.com goes live in the summer of 2015.</p>
+                  </li>
+                  <li>
+                     <p><a href="feedback.htm">Provider your feedback and help us add more things to this list!</a></p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <footer class="quiet" data-track-group="Footer">
+         <ul>
+            <li>{{#link-to 'about'}}About{{/link-to}}</li>
+            <li><a href="privacy-policy.htm">Privacy</a></li>
+         </ul>
+         <p>&copy; Copyright 2015, Inner Loop Software. All rights reserved. </p>
+      </footer> 
 
   {{#if admins}}
     <section class='about admins'>

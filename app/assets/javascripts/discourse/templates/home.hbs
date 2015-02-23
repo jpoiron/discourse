@@ -1,173 +1,75 @@
-<!--<div class='container'>
-    <h1>Hello World!</h1>
-    <p>
-    Let's {{#link-to 'discovery' (query-params ascending=false order='default')}}try this shit out{{/link-to}}
-    </p>
-</div>-->
-
-<div class="bigHeader">
-    <div class="biglogo">
-        <div class="siteversion">
-            <span class="new rainbows">Beta!</span>
-            <i class="fa fa-certificate"></i>
-            <span class="version rainbows">1.0</span>
-        </div>
-        <img src="{{unbound headerImgUrl}}" width="512" height="150" alt="Concerning Me logo" />
-    </div>
-
-
-    <h1 class="tagline">My concerns, my community</h1>
-
-    <div>
-        {{#link-to 'about'}}Why did we create this site?{{/link-to}}
-    </div>
-    <div id="tagline-tabs">
-        {{#link-to 'faq'}}
-            <span>Free</span>
-            <span class="middle">Simple</span>
-            <span>Powerful</span>
-        {{/link-to}}
-    </div>
-    <div id="try">
-        {{#link-to 'discovery' classNames="btn-big"}}Try ConcerningMe!{{/link-to}}
-    </div>
-</div>
-<article class="home-content">
-    <div class="bg">
-        <section id="first">
-            <div class="row">
-                <div class="box">
-
-                </div>
-                <h2>Trust System</h2>
-                <p>As members become trusted regulars over time, they earn abilities to help maintain their community.</p>
-                <p>Once you're trusted, you can click a button to invite your friends via email and they can reply to your topic with a single click. Staff can easily invite an entire group of people by uploading email addresses.</p>
+<section class="section-background-colour1-light section-home-login">
+         <div class="section-wrapper">
+            <div class="text-center">
+               <h1>Welcome back!</h1>
             </div>
+         </div>
+      </section>
 
-            <div class="row">
-                <div class="box">
-                </div>
-                <h2>Community Moderation</h2>
-                <p>As users regularly participate by reading and posting, they gain trust. With that trust, they gain powerful abilities to help maintain the community and push out trolls and spammers.</p>
+<section>
+         <div class="section-wrapper text-center">
+            <img src="{{unbound headerImgUrl}}"> 
+            <h1 style="margin: 0 auto; max-width: 900px;">Concerning me is a free, safe, and effective platform for people to discuss their concerns with others</h1>
+            <div class="layout-twothirds-center text-center">
+               <p>We are dedicated to facilitating discussion of current events, issues, and government policies affecting your community.  Tell us where you are and we'll do the work to keep you up to date on the issues you care about in your area. No more endless browsing for issues you care about in your community. </p>
+               <a class="button button-sign-up" href="/signup" data-track="Sign Up"> Sign Up - It's Free. </a>   
             </div>
-
-        </section>
-        <section id="third">
-            <div class="twoColumn clearfix">
-                <div class="row">
-                    <h2>Encourages positive behaviour</h2>
-                    <p>
-                        Our site encourages positive behaviour by rewarding users with more trust as well as badges which can be seen by other users.
-                    </p>
-                    <div class="box">
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <h2>Easy polling</h2>
-                    <p>
-                        Would like a clear idea of other opinions?  Quickly and easily create a poll and analyse the results.
-                    </p>
-                    <div class="box">
-
-                    </div>
-                </div>
+            <div class="layout-twothirds-center text-center">
+               <p> <a href="/login" class="quiet" data-track="Login" style="padding: 1em 2em;"> Or log in </a> </p>
             </div>
-        </section>
-        <section id="icons">
-            <div class="twoColumn">
-
-                <div class="row">
-                    <div class="icon"><i class="fa fa-bookmark"></i></div>
-                    <h2>Remembers your place</h2>
-                    <p>Topics that you read for a while, replied to, or created will be automatically highlighted. And don't worry about reading an entire topic in one sitting, we’ll always save your place for you. </p>
-                </div>
-
-
-                <div class="row">
-                    <div class="icon"><i class="fa fa-key"></i></div>
-                    <h2>Log in with … anything</h2>
-                    <p>
-                        Use your Twitter, Facebook, Google, Yahoo, or GitHub credentials to log in. Or set up single sign-on with your existing website.
-                    </p>
-                </div>
-
-                <div class="row">
-                    <div class="icon"><i class="fa fa-picture-o"></i></div>
-                    <h2>Paste to share images</h2>
-                    <p>
-                        Want to share an image? Just copy and paste it in. Or drag and drop it in! Posting LOLCats has never been this easy.
-                    </p>
-                </div>
-
-
-                <div class="row">
-                    <div class="icon"><i class="fa fa-search"></i></div>
-                    <h2>Search that actually works</h2>
-                    <p>
-                        Search on any page: just start typing and get results instantly as you type. The results will be automatically scoped to where you currently are.
-                    </p>
-                </div>
-
-                <div class="row">
-                    <div class="icon"><i class="fa fa-shield"></i></div>
-                    <h2>Community moderation</h2>
-                    <p>
-                        As users regularly participate by reading and posting, they gain trust. With that trust, they gain powerful abilities to help maintain the community and push out trolls and spammers.
-                    </p>
-                </div>
-
-
-                <div class="row">
-                    <div class="icon"><i class="fa fa-users"></i></div>
-                    <h2>Bring your friends</h2>
-                    <p>
-                        Once you’re trusted, you can click a button to invite your friends via email and they can reply to your topic with a single click. Staff can easily invite an entire group of people by uploading email addresses.
-                    </p>
-                </div>
-
-
-                <div class="row">
-                    <div class="icon">
-                            <span class="fa-stack fa-lg" style="color: #fff; font-size: 30px;">
-                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                <i class="fa fa-stack-1x" style="font-weight: bold; font-size: .7em;  font-family: arial;">CC</i>
-                            </span>
-                    </div>
-
-                    <h2>Your data belongs to you</h2>
-                    <p>
-                        Our default discussion license is Creative Commons, but you can choose to maximize rights for the site owner or your users. Import or export all your data, right from your browser, any time.
-                    </p>
-                </div>
-
-                <div class="row">
-                    <div class="icon">
-                        <i class="fa fa-cogs"></i>
-                    </div>
-                    <h2>Comprehensive API</h2>
-                    <p>
-                        Discourse has an excellent API. How do we know? Because our JavaScript application is built on top of it. Our large open source community provides plugins, samples, and examples.
-                    </p>
-                </div>
-
-
+         </div>
+      </section>
+      <section class="section-background-colour1">
+         <div class="section-wrapper">
+            <div class="layout-twothirds-center text-center">
+               <p><h2>Civilized Discussion</h2>We strive to create an inclusive and safe environment for discussing the issues that matter most. We accomplish this by requiring everyone to abide by a set of <a href="/t/welcome-to-the-cme-discussion-forum-read-first/10000">ground rules</a>.</p>
+				<p>ConcerningMe is based on a leading edge discussion platform called Discourse.  Discourse is a 100% open source discussion platform built for the next decade of the Internet.  It's a game changer when it comes to on-line discussion software. </p>
+               <a class="outline-link" href="http://www.discourse.org/faq/" target="_new">Learn more about Discourse</a> 
             </div>
+         </div>
+      </section>
+<section class="section-background-faded-colour1 section-devices" data-track-prefix="Mid Page">
+         <div class="section-wrapper layout-grid-frame">
+            <div class="layout-callout-right"> <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/b001cabdefbd6c7968ee9d1ad40124b0/home-devices.png" alt="Trello on devices."> </div>
+            <div class="layout-twothirds-left">
+                    <h2>Trust System</h2>
+                    <p>Our trust system encourages good behaviour by rewarding actions that benefit the community. These actions are as simple as reading topics, liking posts, and commenting.</p>
+					<p>As your reputation grows, you gain new abilities to participate and maintain the community.</p>
+            </div>
+         </div>
+      </section>      
+<section class="section-powerups">
+         <div class="section-wrapper layout-grid-frame">
+            <div class="layout-callout-right"> <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/45628ca89b3637e34e5e51737068ffbb/home-power-up-icons.png" alt="Power-Ups"> </div>
+            <div class="layout-twothirds-left">
+                    <h2>Polls</h2>
+                    <p>Quickly check the pulse of the community by starting a poll and analysing the results.</p>
+            </div>
+         </div>
+      </section>
 
-        </section>
-    </div>
-</article>
-<footer class="home">
-    {{#link-to 'discovery' classNames="btn-big"}}Try ConcerningMe!{{/link-to}}
-
-    <section id="foot">
-        <div class="links">
-            {{#link-to 'about'}}About{{/link-to}} | {{#link-to 'faq'}}FAQ{{/link-to}} | {{#link-to 'discovery'}}Try It{{/link-to}}
-        </div>
-        <p>{{#link-to 'privacy'}}Privacy Information{{/link-to}}</p>
-    </section>
-</footer>
-
-
-
+      <section class="section-background-colour1">
+         <div class="section-wrapper">
+            <div class="layout-twothirds-center text-center">                      
+			<h2>Real Name Not Required</h2>
+            <p>Some of the issues discussed here are sensitive which is why we don't require you to tell us who you are. We know there are some who hide behind anonymity to spew hatred and negativity, but don't worry, our trust and community moderation system will take care of them :).</p>
+            </div>
+         </div>
+      </section>
+      <section class="section-background-colour2" data-track-prefix="Mid Page">
+         <div class="section-wrapper layout-grid-frame">
+            <div class="layout-callout-left layout-callout-down2"> <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/b2acb9906c56430e4e0221ddf26aa093/business-class-logo-white.svg" alt="Business Class" height="130"> </div>
+            <div class="layout-twothirds-right">
+				<h2>Bring your friends</h2>
+				<p>Once you&rsquo;re trusted, you can click a button to invite your friends via email and they can reply to your topic with a single click. Staff can easily invite an entire group of people by uploading email addresses.</p>			
+               <a class="button button-sign-up" href="/signup"> Sign Up - It's Free. </a> 
+            </div>
+         </div>
+      </section>
+<footer class="quiet" data-track-group="Footer">
+         <ul>
+            <li>{{#link-to 'about'}}About{{/link-to}}</a></li>
+            <li><a href="privacy-policy.htm">Privacy</a></li>
+         </ul>
+         <p>&copy; Copyright 2015, Inner Loop Software. All rights reserved. </p>
+      </footer>
